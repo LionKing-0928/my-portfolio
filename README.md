@@ -83,18 +83,19 @@ Netlify, etc.) — Vite inlines `VITE_*` values at build time.
 ## Project screenshots
 
 Each project card shows a real screenshot of that site's homepage, from
-`public/images/projects/`, and the whole card links out to the live site.
+`public/images/projects/`. The screenshot and the title link out to the live
+site; "Read case study" expands the full write-up.
 
-Three of the five are captured. Two fall back to a branded placeholder (globe
+Two of the five are captured. Three fall back to a branded placeholder (globe
 icon + domain) because their `image` is left empty:
 
 | Site | Status |
 | --- | --- |
-| helloprint.com | captured |
-| connected-railway.com | captured |
-| alveoland.com.ph | captured |
-| splurge.art | **no capture** — the site is currently down (redirect loop); no `url` either, so the card is not a link |
-| smart.com.ph | **no capture** — corporate homepage blocks headless browsers, and the project was an internal platform anyway |
+| averi.ai | captured |
+| furniture.com | captured |
+| trulia.com | **no capture** — "Press & Hold" bot wall for headless browsers |
+| rentberry.com | **no capture** — Cloudflare blocks headless browsers |
+| fentonand.co | **no capture** — never fires `load`; retry with `scripts/capture.mjs` |
 
 ### Capturing a screenshot
 
